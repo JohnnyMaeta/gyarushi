@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 書籍タイトル確定後、<title>とh1を正式タイトルに差し替えること -->
+<title>『ギャル市の指導案』特設サイト｜前多昌顕</title>
+<meta name="description" content="書籍『ギャル市の指導案』（前多昌顕）の特設サイト。本文で紹介した手順の動画と、演習用の架空自治体資料をここからたどれます。">
+<style>
+  :root {
+    --ink: #2b2b2b;
+    --bg: #fdfcf8;
+    --accent: #e91e63;
+    --accent-soft: #fce4ec;
+    --card: #ffffff;
+    --line: #e6e0d6;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.8;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+  header {
+    background: linear-gradient(135deg, #fce4ec 0%, #fff8e1 100%);
+    padding: 48px 0 40px;
+    text-align: center;
+    border-bottom: 3px solid var(--accent);
+  }
+  header .label {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 2px 14px;
+    border-radius: 999px;
+    letter-spacing: 0.1em;
+    margin-bottom: 14px;
+  }
+  header h1 { font-size: 1.7rem; letter-spacing: 0.04em; }
+  header .sub { margin-top: 10px; font-size: 0.95rem; color: #6b6257; }
+  section { padding: 40px 0 8px; }
+  h2 {
+    font-size: 1.2rem;
+    border-left: 6px solid var(--accent);
+    padding-left: 12px;
+    margin-bottom: 6px;
+  }
+  .lead { font-size: 0.95rem; color: #5f584e; margin-bottom: 20px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  }
+  .video-card { display: flex; gap: 16px; align-items: center; text-decoration: none; color: inherit; }
+  .video-card:hover { border-color: var(--accent); }
+  .video-card .thumb {
+    flex: 0 0 128px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #000;
+  }
+  .video-card .thumb img { width: 100%; display: block; }
+  .video-card .chap {
+    font-size: 0.75rem;
+    color: var(--accent);
+    font-weight: bold;
+    letter-spacing: 0.06em;
+  }
+  .video-card .t { font-weight: bold; font-size: 0.98rem; line-height: 1.5; }
+  .video-card .d { font-size: 0.85rem; color: #6b6257; margin-top: 4px; }
+  ul.plain { list-style: none; }
+  ul.plain li { margin-bottom: 8px; }
+  ul.plain a { color: #1a0dab; text-decoration: none; }
+  ul.plain a:hover { text-decoration: underline; }
+  .city {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+    margin-bottom: 16px;
+  }
+  .city .name { font-weight: bold; }
+  .city .yomi { font-size: 0.8rem; color: var(--accent); font-weight: normal; margin-left: 6px; }
+  .city .desc { font-size: 0.85rem; color: #6b6257; }
+  .note {
+    background: var(--accent-soft);
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 0.88rem;
+    margin: 20px 0;
+  }
+  footer {
+    margin-top: 48px;
+    padding: 32px 0 40px;
+    background: #f4efe6;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #6b6257;
+  }
+  footer .motto { font-weight: bold; color: var(--accent); font-size: 1rem; margin-bottom: 10px; }
+  footer .links { margin: 12px 0; }
+  footer .links a { color: #1a0dab; text-decoration: none; margin: 0 8px; }
+  @media (max-width: 480px) {
+    .video-card { flex-direction: column; align-items: stretch; }
+    .video-card .thumb { flex: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="label">書籍特設サイト</span>
+    <h1>『ギャル市の指導案』</h1>
+    <p class="sub">AIと作る、自分の授業——本文で紹介した動画と演習資料は、すべてここからたどれます。</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+<section id="videos">
+  <h2>手順を動画で確認する</h2>
+  <p class="lead">本文の手順どおりに進めば動きますが、画面を見ながらやりたい方はこちら。各動画は数分で見終わります。</p>
+
+  <a class="card video-card" href="https://www.youtube.com/watch?v=eNU-hdRT15k" target="_blank" rel="noopener">
+    <span class="thumb"><img src="https://img.youtube.com/vi/eNU-hdRT15k/hqdefault.jpg" alt="Googleフォーム自動作成の動画サムネイル"></span>
+    <span>
+      <span class="chap">第6章</span>
+      <span class="t">AIにコードを書かせてGoogleフォーム作成を自動化する</span>
+      <span class="d">ルーブリックが、1分で自己評価フォームになります。</span>
+    </span>
+  </a>
+
+  <a class="card video-card" href="https://youtu.be/GDBY-kfT0ZI" target="_blank" rel="noopener">
+    <span class="thumb"><img src="https://img.youtube.com/vi/GDBY-kfT0ZI/hqdefault.jpg" alt="スーパー記録くんネオ2導入手順の動画サムネイル"></span>
+    <span>
+      <span class="chap">第7章</span>
+      <span class="t">完全にGASだけで動く「スーパー記録くんネオ2」導入手順</span>
+      <span class="d">話し合いの音声・写真・動画・画面録画を、先生のドライブに直接集めます。テンプレートのリンクは動画概要欄に。</span>
+    </span>
+  </a>
+
+  <a class="card video-card" href="https://youtu.be/_vmQsKdcidk" target="_blank" rel="noopener">
+    <span class="thumb"><img src="https://img.youtube.com/vi/_vmQsKdcidk/hqdefault.jpg" alt="Workspace Studio導入手順の動画サムネイル"></span>
+    <span>
+      <span class="chap">第8章</span>
+      <span class="t">手書きの振り返り画像を自動でスプレッドシートにデータ集計するフロー</span>
+      <span class="d">フォルダーに入れるだけ。縦書きでも、丁寧じゃない字でも、なんとかなります。</span>
+    </span>
+  </a>
+</section>
+
+<section id="shiryo">
+  <h2>演習用の架空自治体資料</h2>
+  <p class="lead">第4章の演習で使う資料です。好きな市を選んで、教育方針と学校経営方針の2枚をNotebookLMに入れてから、自分の単元の指導案を頼んでみてください。</p>
+
+  <div class="card">
+    <div class="city">
+      <span class="name">擬野流市<span class="yomi">ぎゃる市</span></span>
+      <span class="desc">「盛れる学びは、盛れる人生をつくる。」AIは一緒にテンション上げてくれるパイセン。</span>
+      <ul class="plain">
+        <li><a href="shiryo/擬野流市の教育方針.html">擬野流市の教育方針</a></li>
+        <li><a href="shiryo/擬野流市立擬野流小学校_学校経営方針.html">擬野流市立擬野流小学校 学校経営方針</a></li>
+      </ul>
+    </div>
+    <div class="city">
+      <span class="name">戯画市<span class="yomi">ぎが市</span></span>
+      <span class="desc">GIGAスクール推進派。全教職員にGeminiアカウントを配布。</span>
+      <ul class="plain">
+        <li><a href="shiryo/戯画市の教育方針.html">戯画市の教育方針</a></li>
+        <li><a href="shiryo/戯画市立戯画小学校_学校経営方針.html">戯画市立戯画小学校 学校経営方針</a></li>
+      </ul>
+    </div>
+    <div class="city">
+      <span class="name">穴炉愚市<span class="yomi">あなろぐ市</span></span>
+      <span class="desc">端末利用は最小限。紙と鉛筆、視写タイム、ノート検定。</span>
+      <ul class="plain">
+        <li><a href="shiryo/穴炉愚市の教育方針.html">穴炉愚市の教育方針</a></li>
+        <li><a href="shiryo/穴炉愚市立穴炉愚小学校_学校経営方針.html">穴炉愚市立穴炉愚小学校 学校経営方針</a></li>
+      </ul>
+    </div>
+    <div class="city">
+      <span class="name">魁市<span class="yomi">さきがけ市</span></span>
+      <span class="desc">剛毅朴訥にして質実剛健。AIとの対話は「果たし合い」。</span>
+      <ul class="plain">
+        <li><a href="shiryo/魁市の教育方針.html">魁市の教育方針</a></li>
+        <li><a href="shiryo/魁市立魁小学校_学校経営方針.html">魁市立魁小学校 学校経営方針</a></li>
+      </ul>
+    </div>
+    <div class="city">
+      <span class="name">筋肉市<span class="yomi">きんにく市</span></span>
+      <span class="desc">鍛えた体は裏切らない。座り続けてよいのは30分まで。</span>
+      <ul class="plain">
+        <li><a href="shiryo/筋肉市の教育方針.html">筋肉市の教育方針</a></li>
+        <li><a href="shiryo/筋肉市立筋肉小学校_学校経営方針.html">筋肉市立筋肉小学校 学校経営方針</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="note">
+    ここにある自治体・学校・人物は、すべて研修用の架空の設定です。実在のものとは一切関係ありません。各ページの「本文をコピー」ボタンで、そのままNotebookLMに貼りつけられます。
+  </div>
+</section>
+
+<section id="tools">
+  <h2>本文で使うツール</h2>
+  <div class="card">
+    <ul class="plain">
+      <li><a href="https://notebooklm.google.com/" target="_blank" rel="noopener">NotebookLM（Gemini Notebook）</a> — 食材を入れる台所（第3章）</li>
+      <li><a href="https://gemini.google.com/" target="_blank" rel="noopener">Gemini</a> — 練り上げの相棒（第5章）</li>
+      <li><a href="https://script.new" target="_blank" rel="noopener">script.new</a> — GASの新規作成（第6章）</li>
+      <li><a href="https://sheet.new" target="_blank" rel="noopener">sheet.new</a> — スプレッドシートの新規作成（第8章）</li>
+      <li><a href="https://studio.workspace.google.com/" target="_blank" rel="noopener">Google Workspace Studio</a> — 手書きを受け取る自動化（第8章）</li>
+    </ul>
+  </div>
+</section>
+
+<section id="author">
+  <h2>著者の発信</h2>
+  <div class="card">
+    <ul class="plain">
+      <li><a href="https://www.youtube.com/@johnnymaeta" target="_blank" rel="noopener">YouTube</a> — 毎日19:00、教員向けICTチュートリアル</li>
+      <li><a href="https://voicy.jp/channel/4094" target="_blank" rel="noopener">Voicy「ジョニーのICT&きままトーク」</a></li>
+      <li><a href="https://note.com/kumaya77" target="_blank" rel="noopener">note</a></li>
+      <li><a href="https://x.com/johnnymaeta" target="_blank" rel="noopener">X（@johnnymaeta）</a></li>
+      <li><a href="https://www.amazon.co.jp/stores/%E5%89%8D%E5%A4%9A-%E6%98%8C%E9%A1%95/author/B09RGNX3XZ" target="_blank" rel="noopener">著書一覧（Amazon著者ページ）</a></li>
+    </ul>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <p class="motto">超絶簡単です。</p>
+    <p>© 前多昌顕（ジョニー）</p>
+  </div>
+</footer>
+
+</body>
+</html>

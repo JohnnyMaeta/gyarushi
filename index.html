@@ -95,6 +95,32 @@
     font-size: 0.88rem;
     margin: 20px 0;
   }
+  .sample-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .sample-grid a {
+    display: block;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    text-decoration: none;
+    color: inherit;
+  }
+  .sample-grid a:hover { border-color: var(--accent); }
+  .sample-grid img { width: 100%; display: block; aspect-ratio: 1041 / 1511; object-fit: cover; }
+  .sample-grid .cap {
+    display: block;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 6px 4px;
+    color: #6b6257;
+  }
+  @media (max-width: 480px) {
+    .sample-grid { grid-template-columns: 1fr; }
+  }
   footer {
     margin-top: 48px;
     padding: 32px 0 40px;
@@ -205,6 +231,31 @@
 
   <div class="note">
     ここにある自治体・学校・人物は、すべて研修用の架空の設定です。実在のものとは一切関係ありません。各ページの「本文をコピー」ボタンで、そのままNotebookLMに貼りつけられます。
+  </div>
+</section>
+
+<section id="sample">
+  <h2>Studioワーク用のサンプル画像</h2>
+  <p class="lead">第8章のワークで使う、手書き振り返りのサンプルです。画像を開いて保存し、Studioの監視フォルダーに入れると、スプレッドシートへの自動集計を試せます。鉛筆書き・筆文字・縦書きの3パターンを用意しました。</p>
+
+  <div class="card">
+    <div class="sample-grid">
+      <a href="sample/furikaeri-demo1.jpg" target="_blank" rel="noopener">
+        <img src="sample/furikaeri-demo1.jpg" alt="鉛筆書きの振り返りサンプル" loading="lazy">
+        <span class="cap">その1：鉛筆書き</span>
+      </a>
+      <a href="sample/furikaeri-demo2.jpg" target="_blank" rel="noopener">
+        <img src="sample/furikaeri-demo2.jpg" alt="ペン書きの振り返りサンプル" loading="lazy">
+        <span class="cap">その2：ペン書き</span>
+      </a>
+      <a href="sample/furikaeri-demo3.jpg" target="_blank" rel="noopener">
+        <img src="sample/furikaeri-demo3.jpg" alt="縦書き筆文字の振り返りサンプル" loading="lazy">
+        <span class="cap">その3：縦書き・筆文字</span>
+      </a>
+    </div>
+    <div class="note" style="margin-bottom:0;">
+      名前はいずれも架空またはデモ用です。その3は筋肉市の児童という設定なので、集計結果もあわせてお楽しみください。
+    </div>
   </div>
 </section>
 

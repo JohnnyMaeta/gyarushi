@@ -100,16 +100,16 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 12px;
   }
-  .sample-grid a {
-    display: block;
+  .sample-grid .cell {
     border: 1px solid var(--line);
     border-radius: 8px;
     overflow: hidden;
     background: #fff;
-    text-decoration: none;
-    color: inherit;
+    display: flex;
+    flex-direction: column;
   }
-  .sample-grid a:hover { border-color: var(--accent); }
+  .sample-grid .cell:hover { border-color: var(--accent); }
+  .sample-grid a.view { display: block; text-decoration: none; color: inherit; }
   .sample-grid img { width: 100%; display: block; aspect-ratio: 1041 / 1511; object-fit: cover; }
   .sample-grid .cap {
     display: block;
@@ -118,6 +118,19 @@
     padding: 6px 4px;
     color: #6b6257;
   }
+  .sample-grid a.dl {
+    display: block;
+    margin: 0 8px 8px;
+    padding: 6px 4px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border-radius: 6px;
+    text-decoration: none;
+  }
+  .sample-grid a.dl:hover { background: var(--accent); color: #fff; }
   @media (max-width: 480px) {
     .sample-grid { grid-template-columns: 1fr; }
   }
@@ -240,18 +253,33 @@
 
   <div class="card">
     <div class="sample-grid">
-      <a href="sample/furikaeri-demo1.jpg" target="_blank" rel="noopener">
-        <img src="sample/furikaeri-demo1.jpg" alt="鉛筆書きの振り返りサンプル" loading="lazy">
-        <span class="cap">その1：鉛筆書き</span>
-      </a>
-      <a href="sample/furikaeri-demo2.jpg" target="_blank" rel="noopener">
-        <img src="sample/furikaeri-demo2.jpg" alt="ペン書きの振り返りサンプル" loading="lazy">
-        <span class="cap">その2：ペン書き</span>
-      </a>
-      <a href="sample/furikaeri-demo3.jpg" target="_blank" rel="noopener">
-        <img src="sample/furikaeri-demo3.jpg" alt="縦書き筆文字の振り返りサンプル" loading="lazy">
-        <span class="cap">その3：縦書き・筆文字</span>
-      </a>
+      <div class="cell">
+        <a class="view" href="sample/furikaeri-demo1.jpg" target="_blank" rel="noopener">
+          <img src="sample/furikaeri-demo1.jpg" alt="鉛筆書きの振り返りサンプル" loading="lazy">
+          <span class="cap">その1：鉛筆書き</span>
+        </a>
+        <a class="dl" href="sample/furikaeri-demo1.jpg" download="振り返りサンプル1_鉛筆書き.jpg">ダウンロード</a>
+      </div>
+      <div class="cell">
+        <a class="view" href="sample/furikaeri-demo2.jpg" target="_blank" rel="noopener">
+          <img src="sample/furikaeri-demo2.jpg" alt="ペン書きの振り返りサンプル" loading="lazy">
+          <span class="cap">その2：ペン書き</span>
+        </a>
+        <a class="dl" href="sample/furikaeri-demo2.jpg" download="振り返りサンプル2_ペン書き.jpg">ダウンロード</a>
+      </div>
+      <div class="cell">
+        <a class="view" href="sample/furikaeri-demo3.jpg" target="_blank" rel="noopener">
+          <img src="sample/furikaeri-demo3.jpg" alt="縦書き筆文字の振り返りサンプル" loading="lazy">
+          <span class="cap">その3：縦書き・筆文字</span>
+        </a>
+        <a class="dl" href="sample/furikaeri-demo3.jpg" download="振り返りサンプル3_縦書き筆文字.jpg">ダウンロード</a>
+      </div>
+    </div>
+    <div class="note">
+      <strong>保存のしかた</strong><br>
+      ・<strong>パソコン</strong>：各画像の下の「ダウンロード」を押すと、そのまま保存されます（保存先は通常「ダウンロード」フォルダー）。うまくいかないときは、画像をクリックして開き、右クリック→「名前を付けて画像を保存」でもOKです。<br>
+      ・<strong>iPad・スマホ</strong>：画像を長押しして「"写真"に追加」または「画像をダウンロード」を選びます。<br>
+      保存できたら、その画像をStudioの監視フォルダー（Googleドライブ）にアップロードすれば準備完了です。
     </div>
     <div class="note" style="margin-bottom:0;">
       名前はいずれも架空またはデモ用です。その3は筋肉市の児童という設定なので、集計結果もあわせてお楽しみください。
